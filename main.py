@@ -13,4 +13,18 @@ category_list = [
     'kimym_notice'
 ]
 
+# target_list = [
+#     {
+#         'category': 'kimym_books',
+#         'limit': 5
+#     },
+#     {
+#         'category': 'kimym_movies',
+#         'limit': 5
+#     },
+#
+#
+# ]
+
+# crawl(target_list)
 crawl(get_category_limit(category_list))

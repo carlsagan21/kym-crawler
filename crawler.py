@@ -53,7 +53,7 @@ def get_category_limit(category_list):
 
 def crawl(target_list):
     for target in target_list:
-        url_template = 'http://polisci.snu.ac.kr/bbs/view.php?id={0}&no='.format(target)
+        url_template = 'http://polisci.snu.ac.kr/bbs/view.php?id={0}&no='.format(target['category'])
         for i in range(1, target['limit']):
             url = url_template + str(i)
             try:
